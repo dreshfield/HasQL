@@ -11,7 +11,53 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>SUPPORTED_UTI_TYPE</string>
+				<dict>
+					<key>UTImportedTypeDeclarations</key>
+						<array>
+							<dict>
+								<key>UTTypeIdentifier</key>
+								<string>org.haskell.hs-source</string>
+								<key>UTTypeDescription</key>
+								<string>Haskell source file</string>
+								<key>UTTypeReferenceURL</key>
+								<string>http://www.haskell.org</string>
+								<key>UTTypeConformsTo</key>
+								<array>
+									<string>public.text</string>
+									<string>public.plain-text</string>
+									<string>public.source-code</string>
+								</array>
+								<key>UTTypeSpecification</key>
+								<dict>
+									<key>public.filename-extension</key>
+									<array>
+										<string>hs</string>
+									</array>
+								</dict>
+							</dict>
+							<dict>
+								<key>UTTypeIdentifier</key>
+								<string>org.haskell.lhs-source</string>
+								<key>UTTypeDescription</key>
+								<string>Literate Haskell source file</string>
+								<key>UTTypeReferenceURL</key>
+								<string>http://www.haskell.org</string>
+								<key>UTTypeConformsTo</key>
+								<array>
+									<string>public.text</string>
+									<string>public.plain-text</string>
+									<string>public.source-code</string>
+								</array>
+								<key>UTTypeSpecification</key>
+									<dict>
+										<key>public.filename-extension</key>
+										<array>
+											<string>lhs</string>
+										</array>
+									</dict>
+							</dict>
+						</array>
+					</dict>
 			</array>
 		</dict>
 	</array>
