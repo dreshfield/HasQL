@@ -11,70 +11,25 @@
 			<string>QLGenerator</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<dict>
-					<key>UTImportedTypeDeclarations</key>
-						<array>
-							<dict>
-								<key>UTTypeIdentifier</key>
-								<string>org.haskell.hs-source</string>
-								<key>UTTypeDescription</key>
-								<string>Haskell source file</string>
-								<key>UTTypeReferenceURL</key>
-								<string>http://www.haskell.org</string>
-								<key>UTTypeConformsTo</key>
-								<array>
-									<string>public.text</string>
-									<string>public.plain-text</string>
-									<string>public.source-code</string>
-								</array>
-								<key>UTTypeSpecification</key>
-								<dict>
-									<key>public.filename-extension</key>
-									<array>
-										<string>hs</string>
-									</array>
-								</dict>
-							</dict>
-							<dict>
-								<key>UTTypeIdentifier</key>
-								<string>org.haskell.lhs-source</string>
-								<key>UTTypeDescription</key>
-								<string>Literate Haskell source file</string>
-								<key>UTTypeReferenceURL</key>
-								<string>http://www.haskell.org</string>
-								<key>UTTypeConformsTo</key>
-								<array>
-									<string>public.text</string>
-									<string>public.plain-text</string>
-									<string>public.source-code</string>
-								</array>
-								<key>UTTypeSpecification</key>
-									<dict>
-										<key>public.filename-extension</key>
-										<array>
-											<string>lhs</string>
-										</array>
-									</dict>
-							</dict>
-						</array>
-					</dict>
+				<string>org.haskell.hs-source</string>
+				<string>org.haskell.lhs-source</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleExecutable</key>
-	<string>${EXECUTABLE_NAME}</string>
+	<string>HasQL</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dreshfield.${PRODUCT_NAME:rfc1034identifier}</string>
+	<string>com.dreshfield.hasql</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>HasQL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1</string>
+	<string>0.1</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>0.1</string>
 	<key>CFPlugInDynamicRegisterFunction</key>
 	<string></string>
 	<key>CFPlugInDynamicRegistration</key>
@@ -105,5 +60,46 @@
 	<false/>
 	<key>QLThumbnailMinimumSize</key>
 	<real>17</real>
+	<key>UTImportedTypeDeclarations</key>
+	<array>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Haskell source file</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.haskell.hs-source</string>
+			<key>UTTypeReferenceURL</key>
+			<string>http://www.haskell.org</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>hs</string>
+				</array>
+			</dict>
+		</dict>
+		<dict>
+			<key>UTTypeConformsTo</key>
+			<array>
+				<string>public.source-code</string>
+			</array>
+			<key>UTTypeDescription</key>
+			<string>Literate Haskell source file</string>
+			<key>UTTypeIdentifier</key>
+			<string>org.haskell.lhs-source</string>
+			<key>UTTypeReferenceURL</key>
+			<string>http://www.haskell.org</string>
+			<key>UTTypeTagSpecification</key>
+			<dict>
+				<key>public.filename-extension</key>
+				<array>
+					<string>lhs</string>
+				</array>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
