@@ -12,8 +12,8 @@
 		5585CA69179E1B29005B658E /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA68179E1B29005B658E /* CoreServices.framework */; };
 		5585CA6B179E1B29005B658E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA6A179E1B29005B658E /* CoreFoundation.framework */; };
 		5585CA71179E1B29005B658E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5585CA6F179E1B29005B658E /* InfoPlist.strings */; };
-		5585CA73179E1B29005B658E /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */; };
-		5585CA75179E1B29005B658E /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */; };
+		5585CA73179E1B29005B658E /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA72179E1B29005B658E /* GenerateThumbnailForURL.m */; };
+		5585CA75179E1B29005B658E /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA74179E1B29005B658E /* GeneratePreviewForURL.m */; };
 		5585CA77179E1B29005B658E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA76179E1B29005B658E /* main.c */; };
 /* End PBXBuildFile section */
 
@@ -23,10 +23,10 @@
 		5585CA66179E1B29005B658E /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
 		5585CA68179E1B29005B658E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5585CA6A179E1B29005B658E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		5585CA6E179E1B29005B658E /* HasQL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HasQL-Info.plist"; sourceTree = "<group>"; };
+		5585CA6E179E1B29005B658E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5585CA70179E1B29005B658E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		5585CA72179E1B29005B658E /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		5585CA74179E1B29005B658E /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		5585CA76179E1B29005B658E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5585CA78179E1B29005B658E /* HasQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HasQL-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,8 +77,8 @@
 		5585CA6C179E1B29005B658E /* HasQL */ = {
 			isa = PBXGroup;
 			children = (
-				5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */,
-				5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */,
+				5585CA72179E1B29005B658E /* GenerateThumbnailForURL.m */,
+				5585CA74179E1B29005B658E /* GeneratePreviewForURL.m */,
 				5585CA76179E1B29005B658E /* main.c */,
 				5585CA6D179E1B29005B658E /* Supporting Files */,
 			);
@@ -88,7 +88,7 @@
 		5585CA6D179E1B29005B658E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5585CA6E179E1B29005B658E /* HasQL-Info.plist */,
+				5585CA6E179E1B29005B658E /* Info.plist */,
 				5585CA6F179E1B29005B658E /* InfoPlist.strings */,
 				5585CA78179E1B29005B658E /* HasQL-Prefix.pch */,
 			);
@@ -179,8 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5585CA73179E1B29005B658E /* GenerateThumbnailForURL.c in Sources */,
-				5585CA75179E1B29005B658E /* GeneratePreviewForURL.c in Sources */,
+				5585CA73179E1B29005B658E /* GenerateThumbnailForURL.m in Sources */,
+				5585CA75179E1B29005B658E /* GeneratePreviewForURL.m in Sources */,
 				5585CA77179E1B29005B658E /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,7 +275,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
-				INFOPLIST_FILE = "HasQL/HasQL-Info.plist";
+				INFOPLIST_FILE = HasQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
@@ -288,7 +288,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
-				INFOPLIST_FILE = "HasQL/HasQL-Info.plist";
+				INFOPLIST_FILE = HasQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = qlgenerator;
