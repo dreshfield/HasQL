@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5585CA65179E1B29005B658E /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA64179E1B29005B658E /* QuickLook.framework */; };
+		5585CA67179E1B29005B658E /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA66179E1B29005B658E /* ApplicationServices.framework */; };
+		5585CA69179E1B29005B658E /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA68179E1B29005B658E /* CoreServices.framework */; };
+		5585CA6B179E1B29005B658E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585CA6A179E1B29005B658E /* CoreFoundation.framework */; };
+		5585CA71179E1B29005B658E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5585CA6F179E1B29005B658E /* InfoPlist.strings */; };
+		5585CA73179E1B29005B658E /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */; };
+		5585CA75179E1B29005B658E /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */; };
+		5585CA77179E1B29005B658E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA76179E1B29005B658E /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5585CA61179E1B29005B658E /* HasQL.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasQL.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		5585CA64179E1B29005B658E /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		5585CA66179E1B29005B658E /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		5585CA68179E1B29005B658E /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		5585CA6A179E1B29005B658E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		5585CA6E179E1B29005B658E /* HasQL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HasQL-Info.plist"; sourceTree = "<group>"; };
+		5585CA70179E1B29005B658E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		5585CA76179E1B29005B658E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		5585CA78179E1B29005B658E /* HasQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HasQL-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5585CA5C179E1B29005B658E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5585CA6B179E1B29005B658E /* CoreFoundation.framework in Frameworks */,
+				5585CA65179E1B29005B658E /* QuickLook.framework in Frameworks */,
+				5585CA69179E1B29005B658E /* CoreServices.framework in Frameworks */,
+				5585CA67179E1B29005B658E /* ApplicationServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5585CA56179E1B29005B658E = {
+			isa = PBXGroup;
+			children = (
+				5585CA6C179E1B29005B658E /* HasQL */,
+				5585CA63179E1B29005B658E /* Frameworks */,
+				5585CA62179E1B29005B658E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5585CA62179E1B29005B658E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5585CA61179E1B29005B658E /* HasQL.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5585CA63179E1B29005B658E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5585CA64179E1B29005B658E /* QuickLook.framework */,
+				5585CA66179E1B29005B658E /* ApplicationServices.framework */,
+				5585CA68179E1B29005B658E /* CoreServices.framework */,
+				5585CA6A179E1B29005B658E /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5585CA6C179E1B29005B658E /* HasQL */ = {
+			isa = PBXGroup;
+			children = (
+				5585CA72179E1B29005B658E /* GenerateThumbnailForURL.c */,
+				5585CA74179E1B29005B658E /* GeneratePreviewForURL.c */,
+				5585CA76179E1B29005B658E /* main.c */,
+				5585CA6D179E1B29005B658E /* Supporting Files */,
+			);
+			path = HasQL;
+			sourceTree = "<group>";
+		};
+		5585CA6D179E1B29005B658E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5585CA6E179E1B29005B658E /* HasQL-Info.plist */,
+				5585CA6F179E1B29005B658E /* InfoPlist.strings */,
+				5585CA78179E1B29005B658E /* HasQL-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5585CA5D179E1B29005B658E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5585CA60179E1B29005B658E /* HasQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5585CA7B179E1B29005B658E /* Build configuration list for PBXNativeTarget "HasQL" */;
+			buildPhases = (
+				5585CA5B179E1B29005B658E /* Sources */,
+				5585CA5C179E1B29005B658E /* Frameworks */,
+				5585CA5D179E1B29005B658E /* Headers */,
+				5585CA5E179E1B29005B658E /* Resources */,
+				5585CA5F179E1B29005B658E /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HasQL;
+			productName = HasQL;
+			productReference = 5585CA61179E1B29005B658E /* HasQL.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5585CA57179E1B29005B658E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "David Dreshfield";
+			};
+			buildConfigurationList = 5585CA5A179E1B29005B658E /* Build configuration list for PBXProject "HasQL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5585CA56179E1B29005B658E;
+			productRefGroup = 5585CA62179E1B29005B658E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5585CA60179E1B29005B658E /* HasQL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5585CA5E179E1B29005B658E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5585CA71179E1B29005B658E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		5585CA5F179E1B29005B658E /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5585CA5B179E1B29005B658E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5585CA73179E1B29005B658E /* GenerateThumbnailForURL.c in Sources */,
+				5585CA75179E1B29005B658E /* GeneratePreviewForURL.c in Sources */,
+				5585CA77179E1B29005B658E /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5585CA6F179E1B29005B658E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5585CA70179E1B29005B658E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5585CA79179E1B29005B658E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5585CA7A179E1B29005B658E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5585CA7C179E1B29005B658E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
+				INFOPLIST_FILE = "HasQL/HasQL-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		5585CA7D179E1B29005B658E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
+				INFOPLIST_FILE = "HasQL/HasQL-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5585CA5A179E1B29005B658E /* Build configuration list for PBXProject "HasQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5585CA79179E1B29005B658E /* Debug */,
+				5585CA7A179E1B29005B658E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5585CA7B179E1B29005B658E /* Build configuration list for PBXNativeTarget "HasQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5585CA7C179E1B29005B658E /* Debug */,
+				5585CA7D179E1B29005B658E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5585CA57179E1B29005B658E /* Project object */;
+}
