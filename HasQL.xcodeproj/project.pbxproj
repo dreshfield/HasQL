@@ -15,21 +15,7 @@
 		5585CA73179E1B29005B658E /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA72179E1B29005B658E /* GenerateThumbnailForURL.m */; };
 		5585CA75179E1B29005B658E /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA74179E1B29005B658E /* GeneratePreviewForURL.m */; };
 		5585CA77179E1B29005B658E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 5585CA76179E1B29005B658E /* main.c */; };
-		55BA1EEB179F3DF500A9B7AF /* HasQL.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5585CA61179E1B29005B658E /* HasQL.qlgenerator */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		55BA1EE9179F3DCB00A9B7AF /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "~/Library/QuickLook";
-			dstSubfolderSpec = 0;
-			files = (
-				55BA1EEB179F3DF500A9B7AF /* HasQL.qlgenerator in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5585CA61179E1B29005B658E /* HasQL.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HasQL.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +29,9 @@
 		5585CA74179E1B29005B658E /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		5585CA76179E1B29005B658E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		5585CA78179E1B29005B658E /* HasQL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HasQL-Prefix.pch"; sourceTree = "<group>"; };
+		55F74D5617A0851F00AFB400 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		55F74D5717A0851F00AFB400 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		55F74D5A17A095F000AFB400 /* Changelog.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = Changelog.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +52,9 @@
 		5585CA56179E1B29005B658E = {
 			isa = PBXGroup;
 			children = (
+				55F74D5A17A095F000AFB400 /* Changelog.md */,
+				55F74D5617A0851F00AFB400 /* LICENSE.txt */,
+				55F74D5717A0851F00AFB400 /* README.md */,
 				5585CA6C179E1B29005B658E /* HasQL */,
 				5585CA63179E1B29005B658E /* Frameworks */,
 				5585CA62179E1B29005B658E /* Products */,
@@ -131,7 +123,6 @@
 				5585CA5D179E1B29005B658E /* Headers */,
 				5585CA5E179E1B29005B658E /* Resources */,
 				5585CA5F179E1B29005B658E /* Rez */,
-				55BA1EE9179F3DCB00A9B7AF /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -247,8 +238,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx10.8;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Debug;
 		};
@@ -280,7 +272,9 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.8;
+				VERSIONING_SYSTEM = "";
 			};
 			name = Release;
 		};
@@ -288,11 +282,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Test Builds";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
 				INFOPLIST_FILE = HasQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				OBJROOT = "$(SYMROOT)/Intermediates";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "${BUILD_DIR}/Test Builds";
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Debug;
@@ -301,11 +299,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/Releases";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HasQL/HasQL-Prefix.pch";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				INFOPLIST_FILE = HasQL/Info.plist;
 				INSTALL_PATH = /Library/QuickLook;
+				OBJROOT = "$(SYMROOT)/Intermediates";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "${BUILD_DIR}/Releases";
+				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
